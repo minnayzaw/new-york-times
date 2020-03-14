@@ -37,6 +37,7 @@ function Home(props) {
           );
         })
         .catch(function(error) {
+          setLoading(false);
           setError(true);
         });
     }
